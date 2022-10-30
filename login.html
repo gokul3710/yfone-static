@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>yFone</title>
+
+    <link rel='stylesheet' href='./assets/css/style.css' />
+    <link rel='stylesheet' href='./assets/css/signup.css' />
+    <link rel='stylesheet' href='./assets/css/products.css' />
+    <link rel='stylesheet' href='./assets/css/cart.css' />
+    <link rel='stylesheet' href='./assets/css/product.css' />
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="Your logo" title="Your logo" style="height:4rem;" />
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li>
+                    <a class="nav-link" href="cart.html">CART</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orders.html">ORDERS</a>
+                </li>
+                <li class="account-open">
+                    <a style="text-transform: uppercase;">Gokul</a>
+                    <ul class="account-menu">
+                        <li>
+                            <a href="my-account.html">MY ACCOUNT</a>
+                        </li>
+                        <li>
+                            <a href="">LOGOUT</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <button id="open-menu-btn"><img src="./assets/icons/menu-black.png" alt="" srcset=""></button>
+            <button id="close-menu-btn"><img src="./assets/icons/close-black.png" alt=""></button>
+        </div>
+    </nav>
+
+    <section class="form">
+        <div class="container contact-container">
+            <h2>Login</h2>
+            <form class="contact-form" id="submit-form" action="" method="post">
+                <input type="email" name="Email" placeholder="Your Email Address" required>
+                <input type="password" name="Password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="signup.html"><h5>Don't have an account? <span style="color: var(--color-primary);">Create one!</span></h5></a>
+            </form>
+        </div>
+</section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-1">
+                <!-- <a href="index.html" class="footer-logo"><h4></h4></a> -->
+                <a class="footer-logo" href="index.html">
+                    <img src="./assets/images/logo.png" alt="Your logo" title="Your logo" />
+                </a>
+                <!-- <p>Everyone comes to the crossroads of thier life and our mission is to help them 
+                    to choose the right path.</p> -->
+                <p>Our mission is to help students choose the right path when they are stuck in crossroads of their
+                    life.</p>
+            </div>
+            <div class="footer-2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Privacy and Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h4>Contact Us</h4>
+                <p>+91 7356660572</p>
+                <p>talk@yfone.in</p>
+                <ul class="footer-socials">
+                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="https://instagram.com/g.k.1.6" target="_blank">Copyright &copy; 2022 yFone. All rights
+                reserved.</a>
+        </div>
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <img src="./assets/icons/up-arrow.png" alt="">
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+
+        document.querySelector('.account-open').addEventListener('click', () => {
+            document.querySelector('.account-menu').style.display = 'block';
+        })
+
+    </script>
+</body>
+
+</html>

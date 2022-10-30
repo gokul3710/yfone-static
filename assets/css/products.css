@@ -1,0 +1,154 @@
+.products h4{
+    margin-left: 5%;
+    width: auto;
+    font-family: 'Archivo', sans-serif;
+}
+
+.products .subtitle{
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.product{
+    transition: var(--transition);
+    position: relative;
+}
+
+.product-image{
+    background: #f6f6f6;
+    transition: var(--transition);
+}
+
+.product-image:hover{
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.573);
+}
+
+.product-image img{
+    transition: var(--transition);
+    height: auto;
+    cursor: pointer;
+    padding: 2rem 1rem;
+    
+}
+
+.product-image:hover img{
+    transform: scale(1.03);
+    
+}
+
+.product-info{
+    padding: 1rem 0;
+}
+
+.product-info-title h4{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+.product-mrp{
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+}
+
+.product-mrp span{
+    color: var(--color-secondary-var);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    margin-left: 1.5rem;
+}
+
+.product-info p{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.product-info small{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0 0 2rem;
+    
+}
+
+.product-image:hover img{
+    filter: contrast(1.2);
+}
+/* 
+
+.product-cart-btn{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.25rem 1rem;
+    width: 100%;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 6rem;
+}
+
+.product-cart-btn:hover{
+    border-color: var(--color-secondary);
+}
+
+.product-cart-btn .price{
+    right: 0;
+    color: rgba(0, 0, 0, 0.573);
+    font-size: 0.8rem;
+} */
+
+/* .btn-hover{
+    background-color: transparent;
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transition: var(--transition);
+}
+
+.btn-hover:hover{
+    border-color: var(--color-secondary);
+} */
+
+.product-cart{
+    position: absolute;
+    right: 0.5rem;
+    top: 1.4rem;
+    color: black;
+    height: 1.4rem;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.product-cart button{
+    background: transparent;
+}
+
+@media screen and (max-width: 600px){
+    .products h2{
+        font-size: 1.5rem;
+    }
+
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-mrp span{
+        font-size: 0.6rem;
+    }
+
+    .all-products,
+    .products,
+    .form,
+    .signup{
+        margin-top: 5rem;
+    }
+}
+

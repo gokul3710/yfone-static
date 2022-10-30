@@ -1,0 +1,53 @@
+.payment-address{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.payment-form{
+    display: grid;
+    grid-template-columns: 67% 27%;
+    gap: 6%;
+    margin-top: 3rem;
+    margin-right: 0;
+    padding: 1rem;
+}
+
+.payment-method{
+    height: 5rem;
+    width: 100%;
+}
+
+.payment-method p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.payment-method input[type='radio']{
+    height: 0.7rem;
+    width: 0.7rem;
+}
+
+.payment-method label{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.payment-container{
+    margin-top: 5rem;
+}
+
+.payment-container h2{
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px){
+
+    .payment-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+}
