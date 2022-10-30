@@ -1,0 +1,92 @@
+.form-container{
+    background: var(--color--white);
+    padding:0 5rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background-color: #f6f6f6;
+    max-width: 30rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2{
+    padding: 2.5rem  0 1.5rem 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+}
+
+.form-container form .form-name{
+    display: flex;
+    gap: 1.2rem;
+}
+
+form input{
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    color: var(--color--white);
+    border-radius: 0.3rem;
+}
+/* 
+form input text{
+    color: var(--color-secondary);
+} */
+
+form input:focus{
+    border: 1px solid var(--color-primary);
+}
+
+form .btn{
+    width: 100%;
+    cursor: pointer;
+}
+
+form a{
+    padding-bottom: 3rem;
+}
+
+form a span{
+    color: var(--color-primary);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .signup,
+    .login{
+        padding-bottom: 0;
+    }
+
+    .form-container{
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    form{
+        align-self: center;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-container{
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .form-name{
+        flex-direction: column;
+    }
+
+    .form-name input[type="text"]{
+        width: 100%;
+    }
+}

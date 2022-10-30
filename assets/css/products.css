@@ -147,7 +147,8 @@
     .all-products,
     .products,
     .form,
-    .signup{
+    .signup,
+    .login{
         margin-top: 5rem;
     }
 }
